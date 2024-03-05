@@ -1,10 +1,10 @@
 // Requirments
 // TDD - create test for a module that will
-// obscure a credit card number expect the last 4 digits it will take in a string and output a string
-// test to make sure the function obscrures creadit card number that are between the Length of 12 and 16 digits
-// if length <= 16 && >= 12
-//then return consealed number
-//else return "Invalid credit card number"
+// Obscure a credit card number expect the last 4 digits - it will take in a string and output a string
+// Check if card number is between 12 - 16 in length
+// Then return consealed number - ***********1234
+// Otherwise return 'Invalid Credit Card"
+
 const obscureCreditCard = require('./obscureCreditCard');
 
 //Test Positive
