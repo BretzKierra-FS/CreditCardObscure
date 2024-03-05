@@ -7,10 +7,31 @@
 //else return "Invalid credit card number"
 const obscureCreditCard = require('./obscureCreditCard');
 
-describe('Total Module Tests', () => {
-  test('As a user the card number is a valid length', () => {
-    const result = obscureCreditCard('123456789123');
+//Test Positive
+describe('Credit Card Module Tests', () => {
+  test('As a user inputs valid card', () => {
+    const result = obscureCreditCard('123456789163');
     console.log(result);
     expect(result.length).toEqual(12);
+  });
+
+  //Test Positive for obscure return
+  test('Obscures a valid Credit Card', () => {
+    const result = obscureCreditCard('123456789123');
+    console.log(result);
+    expect(result).toBe('********9123');
+  });
+
+  //Test Fail
+  test('As a user inputs invalid card', () => {
+    const result = obscureCreditCard('123');
+    console.log(result);
+    expect(result).toEqual('Invalid Credit Card');
+  });
+  //Test Fail
+  test('Test null', () => {
+    const result = obscureCreditCard(null);
+    console.log(result);
+    expect(result).toBe('Invalid Credit Card');
   });
 });
