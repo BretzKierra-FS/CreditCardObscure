@@ -3,15 +3,15 @@ const obscureCreditCard = (cardNumber) => {
   if (
     typeof cardNumber !== 'string' ||
     cardNumber.length < 12 ||
-    cardNumber.length > 16 
+    cardNumber.length > 16
   ) {
     return 'Invalid Credit Card';
   }
 
   // Take the last 4 digits of the card number
-  const lastFour = cardNumber.slice(-4); 
+  const lastFour = cardNumber.slice(-4);
 
-  // Replace the rest of the digits with '*'
+  // Replace the rest of the digits with '*' then -4
   const sensorCard = '*'.repeat(cardNumber.length - 4);
 
   return `${sensorCard}${lastFour}`;
