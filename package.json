@@ -4,7 +4,7 @@
   "description": "NodeJs TDD Testing Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "keywords": [
     "NodeJs",
@@ -13,5 +13,8 @@
     "TDD"
   ],
   "author": "Kierrra Bretz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
