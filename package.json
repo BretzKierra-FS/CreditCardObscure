@@ -1,0 +1,17 @@
+{
+  "name": "testingapp",
+  "version": "1.0.0",
+  "description": "NodeJs TDD Testing Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "NodeJs",
+    "Jest",
+    "Testing",
+    "TDD"
+  ],
+  "author": "Kierrra Bretz",
+  "license": "MIT"
+}
